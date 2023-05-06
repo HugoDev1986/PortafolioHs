@@ -209,7 +209,7 @@ h3,h4{
 
 .titulo {
     position: absolute;
-    max-width: 30%;
+    max-width: 50%;
     top: 38%;
     right: 35%;
     text-align: center;
@@ -230,7 +230,7 @@ h3,h4{
 .contenedor {
     max-width: 90%;
     width: var(--ancho);
-    margin: 20px auto;
+    margin: 20px 20px;
     overflow: hidden;
   }
 
@@ -387,8 +387,8 @@ h3,h4{
     border: 1px solid #474545;
 }
 .content-modal .tecnologias .items img {
-    width: 70%;
-    margin: 8PX;
+    width: 60%;
+    margin: 5PX;
 }
 .content-modal .btn-cerrar{
     width: 100%;
@@ -416,7 +416,7 @@ h3,h4{
 }
 @media screen and (max-width:800px) {
     .content-modal{
-        width: 90%;
+        width: 80%;
     }
 }
 /*:::Fin Ventana Modal:::*/
@@ -433,7 +433,7 @@ h3,h4{
 
  }
  .seccion-2 .foto img {
-    width: 20rem;
+    width: 60%;
     margin: 50px;
     border-radius: 150px;
  }
@@ -525,6 +525,28 @@ h3,h4{
     left: 0;
     right: 0;
     opacity: 1;
+  }
+
+  @media screen and (max-width: 550px) {
+    .titulo {
+     position: absolute;
+     max-width: 40%;
+     top: 42%;
+     right: 10%;
+     max-width: 360px;
+     margin: auto;
+    }
+    .desarrollador {
+        width: 38%;
+        font-size: 28px;
+    }
+     .nombre {
+        width: 100%;
+        font-size: 40px;
+    }
+    .developer {
+        font-size: 18px;
+    }
   }
 
  
