@@ -1,0 +1,311 @@
+button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}details,main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=IBM+Plex+Mono:wght@400;600&display=swap");
+/*======================
+    * CONFIGURACION *
+========================*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/*======================
+    * VARIABLES *
+========================*/
+:root {
+  --fuente: "IBM Plex Mono", monospace;
+  --fondo: #ffff;
+  --ancho: 1200px;
+  --texto: #000;
+  --boton: #641ee7;
+
+}
+
+/*======================
+    * ESTILOS GENERALES *
+========================*/
+
+body {
+  background: var(--fondo);
+  font-family: var(--fuente);
+  font-size: 18px;
+  color: var(--texto);
+}
+
+p {
+  line-height: 27px;
+}
+
+img {
+  vertical-align: top;
+  width: 100%;
+}
+
+/*======================
+    * CONTENEDORES *
+========================*/
+.contenedor {
+  max-width: 90%;
+  width: var(--ancho);
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.contenedor-ancho {
+  width: 100%;
+  padding: 0 40px;
+  margin: 20px auto;
+}
+
+
+.centrar-div {
+    display: grid;
+    place-items: center;
+}
+
+/*======================
+    * GRID*
+========================*/
+
+.grid {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Tamaño Grande - Computadoras  y Tv */
+.col-1 {grid-template-columns: repeat(1,1fr);}
+.col-2 {grid-template-columns: repeat(2,1fr);}
+.col-3 {grid-template-columns: repeat(3,1fr);}
+.col-4 {grid-template-columns: repeat(4,1fr);}
+.col-5 {grid-template-columns: repeat(5,1fr);}
+.col-6 {grid-template-columns: repeat(6,1fr);}
+.col-7 {grid-template-columns: repeat(7,1fr);}
+.col-8 {grid-template-columns: repeat(8,1fr);}
+.col-9 {grid-template-columns: repeat(9,1fr);}
+.col-10{grid-template-columns: repeat(10,1fr);}
+.col-11{grid-template-columns: repeat(11,1fr);}
+.col-12{grid-template-columns: repeat(12,1fr);}
+
+.span-1 {grid-column: span 1;}
+.span-2 {grid-column: span 2;}
+.span-3 {grid-column: span 3;}
+.span-4 {grid-column: span 4;}
+.span-5 {grid-column: span 5;}
+.span-6 {grid-column: span 6;}
+.span-7 {grid-column: span 7;}
+.span-8 {grid-column: span 8;}
+.span-9 {grid-column: span 9;}
+.span-10 {grid-column: span 10;}
+.span-11 {grid-column: span 11;}
+.span-12 {grid-column: span 12;}
+
+/* Tamaño mediano - Tablets */
+@media screen and (max-width: 992px) {
+    .tab-col-1 {grid-template-columns: repeat(1,1fr);}
+    .tab-col-2 {grid-template-columns: repeat(2,1fr);}
+    .tab-col-3 {grid-template-columns: repeat(3,1fr);}
+    .tab-col-4 {grid-template-columns: repeat(4,1fr);}
+    .tab-col-5 {grid-template-columns: repeat(5,1fr);}
+    .tab-col-6 {grid-template-columns: repeat(6,1fr);}
+    .tab-col-7 {grid-template-columns: repeat(7,1fr);}
+    .tab-col-8 {grid-template-columns: repeat(8,1fr);}
+    .tab-col-9 {grid-template-columns: repeat(9,1fr);}
+    .tab-col-10{grid-template-columns: repeat(10,1fr);}
+    .tab-col-11{grid-template-columns: repeat(11,1fr);}
+    .tab-col-12{grid-template-columns: repeat(12,1fr);}
+
+    .tab-span-1 {grid-column: span 1;}
+    .tab-span-2 {grid-column: span 2;}
+    .tab-span-3 {grid-column: span 3;}
+    .tab-span-4 {grid-column: span 4;}
+    .tab-span-5 {grid-column: span 5;}
+    .tab-span-6 {grid-column: span 6;}
+    .tab-span-7 {grid-column: span 7;}
+    .tab-span-8 {grid-column: span 8;}
+    .tab-span-9 {grid-column: span 9;}
+    .tab-span-10 {grid-column: span 10;}
+    .tab-span-11 {grid-column: span 11;}
+    .tab-span-12 {grid-column: span 12;}
+}
+
+/* Tamaño pequeño - Celulares*/
+@media screen and (max-width: 576px) {
+    .cel-col-1 {grid-template-columns: repeat(1,1fr);}
+    .cel-col-2 {grid-template-columns: repeat(2,1fr);}
+    .cel-col-3 {grid-template-columns: repeat(3,1fr);}
+    .cel-col-4 {grid-template-columns: repeat(4,1fr);}
+    .cel-col-5 {grid-template-columns: repeat(5,1fr);}
+    .cel-col-6 {grid-template-columns: repeat(6,1fr);}
+    .cel-col-7 {grid-template-columns: repeat(7,1fr);}
+    .cel-col-8 {grid-template-columns: repeat(8,1fr);}
+    .cel-col-9 {grid-template-columns: repeat(9,1fr);}
+    .cel-col-10{grid-template-columns: repeat(10,1fr);}
+    .cel-col-11{grid-template-columns: repeat(11,1fr);}
+    .cel-col-12{grid-template-columns: repeat(12,1fr);}
+
+    .cel-span-1 {grid-column: span 1;}
+    .cel-span-2 {grid-column: span 2;}
+    .cel-span-3 {grid-column: span 3;}
+    .cel-span-4 {grid-column: span 4;}
+    .cel-span-5 {grid-column: span 5;}
+    .cel-span-6 {grid-column: span 6;}
+    .cel-span-7 {grid-column: span 7;}
+    .cel-span-8 {grid-column: span 8;}
+    .cel-span-9 {grid-column: span 9;}
+    .cel-span-10 {grid-column: span 10;}
+    .cel-span-11 {grid-column: span 11;}
+    .cel-span-12 {grid-column: span 12;}
+}
+
+/*======================
+    * COMPONENTES *
+========================*/
+
+/*TARJETAS*/
+.card {
+  padding: 40px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 30px rgba(221, 221, 221, 0.3);
+}
+
+
+/*======================
+    * FUENTES *
+========================*/
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  margin: 0;
+}
+
+.display-1 {
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.display-1 {
+    font-weight: 700;
+    font-size: 54px;
+}
+
+.display-1 {
+    font-weight: 700;
+    font-size: 44px;
+}
+
+/*======================
+    * FORMULARIOS*
+========================*/
+
+form  {
+    font-family: var(--fuente);
+    margin-top: 30px;
+}
+
+form .input {
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 1px solid #d6d6d6;
+    transition: .3s ease all;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+form .input:focus {
+    border: 1px solid #641ee7;
+    outline: none;
+}
+
+/*======================
+    *BOTONES*
+========================*/
+
+.boton {
+    background: #641ee7;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 22px;
+    transition: .3s ease all;
+}
+
+.boton:hover {
+    background: #5114c2;
+}
+
+.boton.verde {
+    background: #00a04a;
+}
+
+.boton.verde:hover {
+    background: #00833d;
+}
+
+.boton-radius {
+    background: #641ee7;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 22px;
+    transition: .3s ease all;
+}
+
+.boton-radius:hover {
+    background: #5114c2;
+    transform: scale(1.1);
+}
+
+/*======================
+    * IMAGENES*
+========================*/
+
+.img-responsive {
+
+    width: 75vh;
+    max-width: 1000px;
+    min-width: 250px;
+    margin: auto;
+}
+.img-responsive img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+/*======================
+    * HElPERS*
+========================*/
+
+/*Sin margenes*/
+.no-margen {margin: 0;}
+.no-margen-superior {margin-top: 0;}
+.no-margen-inferior {margin-bottom: 0;}
+.no-margen-izquierdo {margin-left: 0;}
+.no-margen-derecho {margin-right: 0; }
+
+/*margenes entre elementos o contenedores*/
+.margen-inferior {margin-bottom: 20px;}
+.margen-inferior-alta {margin-top: 40px;}
+.margen-superior {margin-top: 20px;}
+.margen-superior-alta {margin-top: 40px;}
+
+/*Posicion de texto*/
+.texto-centrado {text-align: center;}
+.texto-izquierda {text-align: left;}
+.texto-derecha {text-align: right;}
+
+
+
+
+
+
+
