@@ -321,7 +321,6 @@ h3,h4{
     background: #fff;
     border: 6px solid var(--colortext);
     border-radius: 20px;
-
 }
  .seccion-2 .sobre-mi p {
     padding: 30px;
@@ -513,7 +512,7 @@ h3,h4{
     left: 0;
     background: var(--colortext);
     opacity: 0;
-    z-index: -1;
+    z-index: -;
     transition: all 0.5s;
   }
   
@@ -531,10 +530,11 @@ h3,h4{
     .titulo {
      position: absolute;
      max-width: 40%;
-     top: 42%;
-     right: 10%;
+     top: 38%;
+     right: 2%;
      max-width: 360px;
      margin: auto;
+     text-align: center;
     }
     .desarrollador {
         width: 38%;
@@ -547,6 +547,29 @@ h3,h4{
     .developer {
         font-size: 18px;
     }
+    .seccion-2 .sobre-mi{
+     margin: 0 10px;
+    }
+    .seccion-2 .sobre-mi h3 {
+        color: var(--colortext);
+        font-weight: 700;
+        font-size: 23px;
+        margin-top: 50px;
+        margin: auto;
+        padding: 8px;
+        width: 70%;
+        background: #fff;
+        border: 6px solid var(--colortext);
+        border-radius: 20px;
+    }
+    .seccion-2 .sobre-mi p {
+        padding: 10px;
+        font-size: 14px;
+     }
+     .seccion-2 .foto {
+        margin: 30px 10px;
+     }
+
   }
 
  
