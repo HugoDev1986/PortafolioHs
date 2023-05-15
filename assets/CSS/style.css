@@ -247,6 +247,9 @@ h3,h4{
     overflow: hidden;
     margin: auto;
 }
+.developer {
+    margin-top: 15px;
+}
 
 @keyFrames typing {
 
@@ -305,10 +308,6 @@ h3,h4{
     border-radius: 50px;
     box-shadow: 2px 2px 5px rgba(0, 0.3, 0.4, 0.5);
     
-}
-
-.seccion-2 .sobre-mi:hover {
-    background: #24243e;
 }
 
 .seccion-2 .sobre-mi h3 {
@@ -428,14 +427,11 @@ h3,h4{
     box-shadow: 2px 2px 5px rgba(0, 0.3, 0.4, 0.6);
  }
 
- .seccion-2 .foto:hover {
-    background: #24243e;
-
- }
  .seccion-2 .foto img {
-    width: 60%;
-    margin: 50px;
-    border-radius: 150px;
+    width: 85%;
+    height: 70%;
+    margin-top: 80px;
+    border-radius: 120px;
  }
 
 /*Seccion-3*/
@@ -475,7 +471,6 @@ h3,h4{
     opacity: 10;
 }
  
-
  .contenido-p {
     background-color: rgb(231, 235, 238);
     padding: 5px;
@@ -529,7 +524,7 @@ h3,h4{
     .titulo {
      position: absolute;
      max-width: 40%;
-     top: 44%;
+     top: 35%;
      right: 4%;
      max-width: 360px;
      margin: auto;
@@ -543,7 +538,8 @@ h3,h4{
         font-size: 38px;
     }
     .developer {
-        font-size: 18px;
+        margin-top: 10px;
+        font-size: 13px;
     }
     .seccion-2 .sobre-mi {
         margin: 15px;
@@ -584,6 +580,10 @@ h3,h4{
     width: 70%;
     margin-top: 55px;
     
+ }
+ .seccion-2 .foto img {
+    margin: 20px;
+    height: auto;
  }
  
   }
