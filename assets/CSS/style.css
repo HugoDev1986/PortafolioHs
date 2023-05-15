@@ -209,9 +209,9 @@ h3,h4{
 
 .titulo {
     position: absolute;
-    max-width: 30%;
-    top: 38%;
-    right: 35%;
+    max-width: 40%;
+    top: 35%;
+    right: 38%;
     text-align: center;
     color: var(--colortext);
 }
@@ -219,7 +219,7 @@ h3,h4{
     position: relative;
     color: #fff;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
 }
 
@@ -239,7 +239,7 @@ h3,h4{
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 40%;
+    width: 45%;
     font-weight: 100;
     font-size: 35PX;
     color: var(--colortext) ;
@@ -525,12 +525,12 @@ h3,h4{
      position: absolute;
      max-width: 40%;
      top: 35%;
-     right: 4%;
+     right: 14%;
      max-width: 360px;
      margin: auto;
     }
     .desarrollador {
-        width: 38%;
+        width: 52%;
         font-size: 28px;
     }
      .nombre {
