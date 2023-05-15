@@ -366,10 +366,9 @@ h3,h4{
     width: 100%;
     max-width: 462px;
     padding: 20px;
-    background: #0f0c29;
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);;
+    background: #fff;
     border-radius: 6px;
+    border: 0.5px solid#000;
 }
 .content-modal h2{
     margin-bottom: 15px;
@@ -379,7 +378,7 @@ h3,h4{
 }
 
 .content-modal .tecnologias {
-    color: #ffff;
+    color: var(--colortext);
     text-align: center;
 }
 .content-modal .tecnologias .items {
