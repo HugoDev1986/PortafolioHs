@@ -207,6 +207,24 @@ h3,h4{
     color: #222222;
 }
 
+.idiomas{
+    position: absolute;
+    left: 90%;
+    margin: 90px 20px;
+    width: 75px ;
+    display: flex;
+}
+.idiomas-banderas {
+    width: 60px;
+    margin: 5px;
+}
+.bandera {
+    cursor: pointer;
+}
+.bandera:hover {
+    transform: scale(1.2);
+}
+
 .titulo {
     position: absolute;
     max-width: 40%;
@@ -489,7 +507,7 @@ h3,h4{
     border: none;
     padding: 6px 8px;
     display: inline-block;
-    font-size: 15px;
+    font-size: 11px;
     font-family: var(--fuente);
     font-weight: 100;
     width: 120px;
