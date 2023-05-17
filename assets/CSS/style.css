@@ -96,7 +96,7 @@ h3,h4{
 
     .abrir-menu {
         color: #008BD1;
-        max-width: 10rem;
+        max-width: 2rem;
     }
 
     .cerrar-menu {
@@ -540,6 +540,13 @@ h3,h4{
     opacity: 1;
   }
   @media screen and (max-width: 550px) {
+    .idiomas{
+        position: absolute;
+        left: 68%;
+        margin: 90px 20px;
+        width: 75px ;
+        display: flex;
+    }
     .titulo {
      position: absolute;
      max-width: 40%;
