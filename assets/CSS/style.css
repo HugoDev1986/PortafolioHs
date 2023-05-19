@@ -214,6 +214,13 @@ h3,h4{
     width: 75px ;
     display: flex;
 }
+.idiomas p {
+    font-size: 10px;
+    color: #fff;
+    margin-top: 1px;
+    text-align: center;
+   
+}
 .idiomas-banderas {
     width: 60px;
     margin: 5px;
@@ -258,7 +265,7 @@ h3,h4{
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 45%;
+    width: 50%;
     font-weight: 100;
     font-size: 35PX;
     color: var(--colortext) ;
@@ -348,7 +355,7 @@ h3,h4{
 /*:::Boton-Modal:::*/
 .boton-modal{
     padding: 5px 20px 20px;
-    
+     
 }
 .boton-modal label{
     padding: 10px 15px;
@@ -357,6 +364,7 @@ h3,h4{
     border-radius: 6px;
     cursor: pointer;
     transition: all 300ms ease;
+    width: 100%;
 }
 .boton-modal label:hover{
     background-color: #185E83;
@@ -558,7 +566,7 @@ h3,h4{
      margin: auto;
     }
     .desarrollador {
-        width: 52%;
+        width: 58%;
         font-size: 28px;
     }
      .nombre {
