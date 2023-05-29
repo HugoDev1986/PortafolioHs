@@ -9,20 +9,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/CSS/frameWork.css">
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <title>HugoDev</title>
 </head>
 
 <body>
     <header class="header">
         <a href="#" class="logo"><span class="corchete">{</span>HugoDeV<span class="corchete">}</span></a>
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav">
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="nav-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#sobre-mi">About me</a></li>
                 <li><a href="#portafolio">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#Contacto">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -45,15 +47,15 @@
                 <a href="#sobre-mi"><img class="flecha-abajo" src="assets/IMG/flecha-hacia-abajo (1).png" alt=""></a>
             </div>
         </section>
-        <hr>
-        <hr>
-
-        <section id="sobre-mi" class="seccion-2">
+        <div id="sobre-mi" class="t-sobre-mi texto-centrado">
+            <h2>About me</h2>
+        </div>
+        <section class="seccion-2">
             <div class="contenedor">
                 <div class="grid col-2 tab-col-1 cel-col-1">
                     <div class="sobre-mi">
-                        <h3>ABOUT ME</h3>
-                        <p>Hello! I am Hugo I live in Bogotá Colombia I am 37 years old I am a very enthusiastic person
+                        <p>Hello! <br><br> I am Hugo I live in Bogotá Colombia I am 37 years old I am a very
+                            enthusiastic person
                             and passionate about technology, a technologist in analysis and development of information
                             systems of the national learning service (SENA). As a web developer I have been creating web
                             applications, interactive and scalable learning and productive websites, the Freelancer job
@@ -120,13 +122,58 @@
                     </div>
                 </div>
             </div>
+            <div class="indicador-formacion">
+                <a href="#formacion"><img class="flecha-abajo" src="assets/IMG/flecha-hacia-abajo (1).png" alt=""></a>
+            </div>
         </section>
-
+        <div id="formacion" class="t-sobre-mi texto-centrado">
+            <h2>Algo mas </h2>
+        </div>
         <section class="seccion-3">
+            <div class="seccion-3-cv grid col-2 tab-col-1 cel-col-1">
+                <div class="formacion">
+                    <div class="t-formacion">
+                        <h2>Estudios</h2>
+                    </div>
+                    <div class="certificado">
+                        <h3>- TECNOLOGO EN ANALISIS Y DESARROLLO DE SISTEMAS DE INFORMACION</h3>
+                        <div class="Logo-sena">
+                            <img src="assets/IMG/Logo-de-SENA-png-verde.png" alt="">
+                        </div>
+                        <div class="Institucion">
+                            <p>-> Servicio nacional de aprendizaje SENA</p>
+                        </div>
+                        <p>-> 2022</p>
+                        <a href="#"><button>
+                            ver certificado
+                        </button></a>
+                    </div>
+                  
+                </div>
 
+                <div class="experiencia">
+                    <div class="t-formacion">
+                        <h2>Algo de experiencia </h2>
+                    </div>
+                    <div class="certificado">
+                        <h3>- TECNOLOGO EN ANALISIS Y DESARROLLO DE SISTEMAS DE INFORMACION</h3>
+                        <p>-> Servicio nacional de aprendizaje SENA</p>
+                        <p>-> 2022</p>
+                        <a href="doc/titulotecnologo.pdf" target="blank"> Ver Titulo =></a>
+                    </div>
+                    <div class="certificado">
+                        <h3>- TECNOLOGO EN ANALISIS Y DESARROLLO DE SISTEMAS DE INFORMACION</h3>
+                        <p>-> Servicio nacional de aprendizaje SENA</p>
+                        <p>-> 2022</p>
+                        <a href="doc/titulotecnologo.pdf" target="blank"> Ver Titulo =></a>
+                    </div>
+                </div>
+            </div>
         </section>
+        <div id="portafolio" class="t-sobre-mi texto-centrado">
+            <h2>portafolio</h2>
+        </div>
         <section id="portafolio" class="seccion-4">
-            <h3 class="titulo-portafolio">MY PROJECTS</h3>
             <div class=" contenedor margen-superior-alta portafolio">
                 <div class="grid col-3 tab-col-2 cel-col-1 ">
                     <div class="proyectos">
@@ -235,7 +282,16 @@
                 </div>
             </div>
         </section>
+        <div id="Contacto" class="t-sobre-mi texto-centrado">
+            <h2>Contacto</h2>
+        </div>
+        <section class="seccion-5">
+
+        </section>
     </main>
+    <footer>
+        footer
+    </footer>
     <script src="assets/javaScript/main.js"></script>
 </body>
 
