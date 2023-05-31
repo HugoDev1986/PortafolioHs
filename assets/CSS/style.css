@@ -17,7 +17,7 @@ html {
     --fuentes-2:'Press Start 2P', cursive;
 }
 
-h2,h4{
+h2{
     color: var(--colortext);
     font-family: 'Press Start 2P', cursive;
 }
@@ -299,6 +299,7 @@ h2,h4{
     font-size: 30px;
     margin: 20px;
     color:var(--colortext);
+    font-family: var(--fuente);
 }
 
 .content-modal .tecnologias {
@@ -407,10 +408,25 @@ h2,h4{
 .Logo-sena {
     position: absolute;
     display: flex;
+    margin-top: 10px;
 }
 .Logo-sena img {
     display: flex;
     width: 15%;
+    margin-top: 10px;
+}
+.enlace-certificado {
+    text-decoration: none;
+    font-family: var(--fuente);
+    color:#222222;
+    font-size: 12px;
+    margin: auto;
+    justify-content: center;
+    cursor: pointer;
+    transition: 1.2 all;
+} 
+.enlace-certificado:hover{
+    transform: scale(1.2);
 }
 .certificado {
     margin: 40px;
@@ -427,7 +443,8 @@ h2,h4{
 .formacion p {
     display: flex;
     color: var(--colortext);
-    margin: 5px 58px;
+    margin: 15px 58px;
+    justify-content: center;
 }
 
 .experiencia {
@@ -494,6 +511,7 @@ h2,h4{
  .Descripcion p {
     font-size: 13px;
     text-align: center;
+    font-family: var(--fuente);
  }
  .botones-repo {
     display: flex;
