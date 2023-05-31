@@ -46,10 +46,11 @@ h2,h4{
     position: relative;
     color: #fff;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1em;
     letter-spacing: 2px;
     transition: 1.2s;
     text-decoration: none;
+    font-family: var(--fuentes-2);
 }
 
 .header .logo:hover {
@@ -58,6 +59,9 @@ h2,h4{
 
 .corchete {
     color: var(--colortext);
+    font-family: var(--fuentes-2);
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 
 .nav-list {
@@ -77,64 +81,6 @@ h2,h4{
 .nav-list li a:hover {
     transform: scale(1.2);
     color: #008BD1;
-}
-
- .abrir-menu,
-.cerrar-menu {
-    display: none;
-}
-
- /*MENU HAMBURGUESA(tablet)*/
-
-@media screen and (max-width: 992px) {
-
-    .abrir-menu,
-    .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-    .abrir-menu {
-        color: #008BD1;
-        max-width: 2rem;
-    }
-
-    .cerrar-menu {
-        color: #008BD1;
-    }
-
-    .nav {
-        opacity: 0.8;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    }
-
-    .nav.visible {
-        opacity: 0;
-        visibility: visible;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        align-items: end;
-    }
-
-    .nav-list li a {
-        color: #008BD1;
-    }
 }
 
 .seccion {
@@ -417,11 +363,11 @@ h2,h4{
     margin-bottom: 100px;
  }
 
- .t-sobre-mi {
+ .t-seccion {
     background: var(--colortext);
     padding: 30px;
  }
-.t-sobre-mi h2 {
+.t-seccion h2 {
     color: var(--colortext);
     font-weight: 700;
     font-size: 30px;
@@ -506,7 +452,6 @@ h2,h4{
 
 /*Seccion 4*/
  .seccion-4 {
-    position: relative;
     width: 100%;
     height: 100vh;
     margin-top: 10%;
@@ -595,7 +540,7 @@ h2,h4{
 
   /*Seccion-5*/
   .seccion-5{
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100vh;
     padding: 40px 0px;
@@ -611,6 +556,9 @@ h2,h4{
 
     .logo {
         display: none;
+    }
+    .nav-list li a {
+      display: none;
     }
 
     .idiomas{
@@ -640,27 +588,32 @@ h2,h4{
         margin-top: 10px;
         font-size: 13px;
     }
+    .t-seccion {
+        background: var(--colortext);
+        padding: 30px;
+     }
+    .t-seccion h2 {
+        color: var(--colortext);
+        font-weight: 700;
+        font-size: 25px;
+        margin:0 auto;
+        padding: 8px;
+        width: 80%;
+        background: #fff;
+        border: 6px solid #222222;
+        border-radius: 20px;
+        text-align: center;
+    }
     .seccion-2 .sobre-mi {
         margin: 15px;
+        width: 90%;
         padding: 0 5px;
         text-align: center;
         color: #fff;
         border-radius: 50px;
-        box-shadow: 2px 2px 5px rgba(0, 0.3, 0.4, 0.5);
-        
+        box-shadow: 2px 2px 5px rgba(0, 0.3, 0.4, 0.5);  
     }
-    .seccion-2 .sobre-mi h3 {
-    color: var(--colortext);
-    font-weight: 700;
-    font-size: 25px;
-    margin-top: 50px;
-    margin: auto;
-    padding: 8px;
-    width: 90%;
-    background: #fff;
-    border: 6px solid var(--colortext);
-    border-radius: 20px;
-}
+
 .seccion-2 .sobre-mi p {
     padding: 0px;
     margin: 20px;
@@ -690,6 +643,50 @@ h2,h4{
     margin: 20px;
     height: auto;
  }
+ .formacion {
+    padding: 10px;
+ }
+ .formacion h2{
+    color: var(--colortext);
+    text-align: left;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40%;
+ }
+ .Logo-sena {
+     position: absolute;
+     display: flex;
+ }
+ .Logo-sena img {
+     display: flex;
+     width: 15%;
+ }
+ .certificado {
+     margin: 40px;
+
+ }
+ .institucion {
+  display: flex;
+  margin: 0 25px;
+ }
+ 
+ .formacion h3 {
+     font-size: 20px;
+ }
+ .formacion p {
+     display: flex;
+     color: var(--colortext);
+     margin: 5px 58px;
+     font-size: 15px;
+     padding: 5px;
+ }
+ .seccion-5{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 0px;
+    margin-top: 350%;
+  }
  
   }
 
