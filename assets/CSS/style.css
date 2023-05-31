@@ -361,7 +361,6 @@ h2{
     display: grid;
     place-content: center;
     margin-top: -120px;
-    margin-bottom: 100px;
  }
 
  .t-seccion {
@@ -380,8 +379,16 @@ h2{
     border-radius: 20px;
     text-align: center;
 }
-
- 
+.flecha-abajo-seccion-2 {
+    width: 2rem;
+    margin-top: 100px;
+    margin-bottom: 0;
+    transition: all 0.2s;
+   }
+   
+   .flecha-abajo-seccion-2:hover {
+       transform: scale(1.2);
+   }
 /*Seccion-3*/
 .seccion-3 {
     position: relative;
@@ -454,10 +461,11 @@ h2{
     padding: 30px;
 }
 .experiencia h2{
-    margin-top: 10rem;
     color: var(--colortext);
-    text-align:left;
-    font-size: 15px;
+    text-align: left;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25%;
  }
  .experiencia h3 {
      font-size: 20px;
@@ -477,7 +485,25 @@ h2{
     background-size: cover;
     background-position: center center;
  }
+ .t-seccion-4 {
+    background: var(--colortext);
+    padding: 30px;
+    margin-top: -115px;
+    margin-bottom: 60px;
 
+ }
+.t-seccion-4 h2 {
+    color: var(--colortext);
+    font-weight: 700;
+    font-size: 30px;
+    margin:0 auto;
+    padding: 4px;
+    width: 30%;
+    background: #fff;
+    border: 6px solid #222222;
+    border-radius: 20px;
+    text-align: center;
+}
  .titulo-portafolio {
     text-align: center;
     padding: 8px;
@@ -571,6 +597,9 @@ h2{
 
   }
   @media screen and (max-width: 550px) {
+    .header {
+        display: none;
+    }
 
     .logo {
         display: none;
@@ -613,7 +642,7 @@ h2{
     .t-seccion h2 {
         color: var(--colortext);
         font-weight: 700;
-        font-size: 25px;
+        font-size: 23px;
         margin:0 auto;
         padding: 8px;
         width: 80%;
@@ -641,22 +670,31 @@ h2{
     margin: 20px;
     padding: 0px;  
  }
+
+
  .seccion-4 {
     position: relative;
     width: 100%;
     height: 100vh;
     margin-top: 100vh;
  }
- .titulo-portafolio {
-    text-align: center;
-    padding: 8px;
-    font-size: 25px;
+ .t-seccion-4 {
+    background: var(--colortext);
+    padding: 30px;
+    margin-top: -5px;
+  }
+  .t-seccion-4 h2 {
+    color: var(--colortext);
     font-weight: 700;
-    background: #ffff;
-    width: 70%;
-    margin-top: 55px;
-    
- }
+    font-size: 23px;
+    margin:0 auto;
+    padding: 8px;
+    width: 80%;
+    background: #fff;
+    border: 6px solid #222222;
+    border-radius: 20px;
+    text-align: center;
+}
  .seccion-2 .foto img {
     margin: 20px;
     height: auto;
@@ -705,9 +743,24 @@ h2{
     padding: 40px 0px;
     margin-top: 350%;
   }
- 
+
+  .t-seccion-5 {
+    background: var(--colortext);
+    padding: 30px;
+    margin-top: -40px;
   }
-
+  .t-seccion-5 h2 {
+    color: var(--colortext);
+    font-weight: 700;
+    font-size: 23px;
+    margin:0 auto;
+    padding: 8px;
+    width: 80%;
+    background: #fff;
+    border: 6px solid #222222;
+    border-radius: 20px;
+    text-align: center;
+}
  
-
+ }
  
